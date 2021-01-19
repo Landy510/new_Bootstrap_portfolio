@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC,OAAO,AAAA,CACrB,OAAO,CAAE,KAAK,CACjB",
+    "sources": [
+        "../scss/page/cart_page4.scss"
+    ],
+    "names": [],
+    "file": "cart_page4.min.css"
+}

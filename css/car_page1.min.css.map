@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAA,CACL,MAAM,CAAE,KAAK,CACb,SAAS,CAAE,KAAK,CACnB",
+    "sources": [
+        "../scss/page/car_page1.scss"
+    ],
+    "names": [],
+    "file": "car_page1.min.css"
+}

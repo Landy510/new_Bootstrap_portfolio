@@ -1,0 +1,210 @@
+.footer{
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-search{
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 25px;
+}
+.footer-search-logo{
+	display: flex;
+	align-items: center;
+	width: 30%;
+	color: white;
+}
+.footer-search-logo-img{
+	width: 40px;
+	height: 40px;
+}
+.footer-search-logo-subscribe{
+	font-size: 24px;
+	margin-left: 20px;
+	color: black; 
+	font-weight: 600;
+}
+
+.footer-search-frame{
+	width: 40%;
+	display: flex;
+}
+.input-section{
+	background: #EAF0ED;
+}
+.input-section{
+	display: flex;
+	width: 90%;
+}
+.input-section .input-icon{
+	display: flex;
+	align-items: center;
+	padding-left: 3px;
+	padding-top: 2px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.input-content-section{
+	width: 100%;
+	margin-right: 5px;
+}
+.input-content{
+	height: 50px;
+	width: 100%;
+	border: 0px;
+	outline: none;  /*去除當點擊input欄位時，會出現的外框*/
+	background: #EAF0ED;
+	font-size: 45px;
+}
+.input-button{
+	border: 0px;
+	width: 15%;
+	background: black;
+	color: white;
+}
+.input-button:hover{
+	color: yellow;
+	cursor: pointer;
+}
+
+.footer-bottom-area{
+	display: flex;
+	justify-content: space-around;
+	padding: 25px;
+	background: rgb(240, 233, 233);
+}
+.fanspage-link{
+	margin-top: 20px;
+	display: flex;
+}
+.footer-company-contact{
+	line-height: 30px;
+}
+.footer-slogon{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-slogon-name{
+	font-size: 30px;
+	font-weight: 600;
+}
+.footer-slogon .mail-option{
+	text-decoration: none;
+	color: #3F5D45;
+}
+.footer-slogon .mail-option:hover{
+	color: red;
+}
+.footer-slogon-img{
+	width: 170px;
+}
+.footer-slogon .line-option{
+	display: block;
+	margin-right: 10px;
+	width: 32px;
+	height: 32px;
+	font-size: 35px;
+	text-decoration: none;
+	color: black;
+}
+.footer-slogon .facebook-option{
+	display: block;
+	width: 32px;
+	height: 32px;
+	font-size: 35px;
+	text-decoration: none;
+	color: black;
+}
+.footer-slogon .line-option:hover{
+	opacity: 0.5;
+}
+.footer-slogon .facebook-option:hover{
+	opacity: 0.5;
+}
+.footer-copyright{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 40%;
+}
+.footer-copyright-slogon{
+	width: 60px;
+}
+.footer-copyright .paragraph{
+	margin-top: 20px;
+}
+.footer-copyright-slogon{
+	writing-mode: vertical-rl;
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 30px;
+	font-weight: 600;
+}
+/*-----------------------------------------------------*/
+@media(max-width:568px){
+	.footer-search{
+		display: block;
+	}
+	.footer-search-logo{
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.footer-search-frame{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.footer-slogon{
+		width: 50%;
+	}
+	.footer-copyright{
+		width: 50%;
+	}
+	.footer-copyright .paragraph{
+		text-align: right;
+	}
+}
+@media(max-width:380px){
+	.footer-copyright{
+		display: none;
+	}
+	.footer-slogon{
+		width: 100%;
+	}
+	.footer-search-frame{
+		width: 100%;
+	}
+	.footer-search-logo-subscribe{
+		font-size: 20px;
+	}
+}
+/*------------------BS部分-----------------------------------*/
+.fanspage-link{
+	.line-option{
+		display: block;
+		margin-right: 10px;
+		width: 32px;
+		height: 32px;
+		font-size: 35px;
+		text-decoration: none;
+		color: black;
+	}
+	.facebook-option{
+		display: block;
+		width: 32px;
+		height: 32px;
+		font-size: 35px;
+		text-decoration: none;
+		color: black;
+	}
+	.line-option:hover, .facebook-option:hover{
+		opacity: 0.4;
+	}
+}
+@media(max-width:768px){
+	
+}

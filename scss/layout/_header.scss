@@ -1,0 +1,172 @@
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	background: yellow;
+}
+.cart_btn{
+	background-color: transparent;
+	border: 1px solid transparent;
+	position: relative;
+}
+.cart_btn{
+	.badge{
+		position: absolute;
+		top: -1px;
+		right: -1px;
+	}
+	
+}
+.product_list_dropdown{
+	right:0;
+	left:auto;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
+.logo span{
+	margin-left: 10px;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 600;
+}
+.logo img{
+	height: 70px;
+}
+.nav-option{
+    display: flex;
+    
+}
+.nav-option li a{
+	display: flex; /*用flex取代block，可以讓a連結的區塊完全填滿數的li的區塊*/
+	color: black;
+	text-decoration: none;
+	padding: 30px;
+	font-weight: 600;
+}
+.nav-option li a:hover{
+	background: black;
+	color: white;
+}
+.banner{
+	//background-image: url('img/bannerbackground.jpg');
+	background-position: center center; 
+	background-size: cover;
+	height: 496px;
+	position: relative;
+}
+.banner-solgan{
+	width: 90px;
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	color: white;
+	writing-mode: vertical-rl;
+	font-size: 50px;
+	letter-spacing: 10px;
+}
+.banner-solgan span{
+	margin-top: 20px;
+}
+.productlist_table{
+	width:400px;
+}
+.productlist_table_img{
+	width: 80px;
+	height: 50px;
+}
+/*---RWD header的PC版型----*/
+.rwd-cart-btn{
+	display: none;
+	text-decoration: none;
+	color: black;
+}
+.rwd-hamburger-btn{
+	display: none;
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+}
+.rwd-nav-option{
+	display: none;
+}
+/*--------------------------------------------------*/
+@media(max-width:767px){
+	.rwd-cart-btn{
+		display: block;
+		
+	}
+	.rwd-hamburger-btn{
+		display: block;
+		padding: 20px;
+	}
+	.nav-option{
+		display: none;
+	}
+	.navigation h1{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.navigation h1 span{
+		display: none;
+	}
+	.rwd-nav-option{
+		background: white;
+		opacity: 0.4;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		
+	}
+	.rwd-nav-option li a{
+		display: block;
+		text-decoration: none;
+		color: black;
+		padding: 10px;
+	}
+	.productlist_table{
+		width:225px;
+	}
+}
+@media(max-width:380px){
+	.banner-solgan{
+		right: -20px
+	}	
+}
+
+
+/*------------------BS部分-----------------------------------*/
+.hide-nav{
+	display: none;
+}
+@media(max-width:768px){
+	.hide-nav{
+		display: block;
+		position:absolute;
+		top: 80px;
+		background: white;
+		opacity: 0.4;
+		width: 100%;
+		z-index: 2;
+		a{
+			display: block;
+			text-decoration: none;
+			color: black;
+		}
+		a:hover{
+			color:red;
+			font-weight: 600;
+		}
+	}	
+}

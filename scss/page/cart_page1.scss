@@ -1,0 +1,32 @@
+.img_size{
+    height: 100px;
+    width: 100px;
+}
+.cart_product_input{
+    width: 30%;
+}
+.cart_product_item_width{
+    width: 30%;
+}
+@media(max-width:768px){
+    .cart_product_input{
+        width: 40%;
+    }
+}
+@media(max-width:568px){
+    .cart_product_input{
+        width: 60%;
+    }
+    .cart_product_item_width{
+        width: 60%;
+        justify-content: flex-start;
+    }
+    .cart_product_font{
+        font-size: 20px;
+    }
+}
+@media(max-width:380px){
+    .change_input{
+        width: 140px;
+    }
+}

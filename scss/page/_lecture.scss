@@ -1,0 +1,157 @@
+.product{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.menu li{
+	border: 1px solid rgb(240, 233, 233);
+}
+/*
+.product .category{
+	background: black;
+	color: white;
+	padding: 20px;
+	font-size: 24px;
+}
+.product .all_dessert{
+	background:rgb(240, 233, 233);
+}
+*/
+.category{
+	background: black;
+	color: white;
+	padding: 20px;
+	font-size: 24px;
+}
+.all_dessert{
+	background:rgb(240, 233, 233);
+}
+.menu li a{
+	color: black;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 24px;
+}
+.menu li a:hover{
+	background: rgb(240, 233, 233);
+}
+.product-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product-list li{
+	position: relative;
+	width: 48%;
+}
+.product-list-li{
+	margin-bottom: 20px;
+}
+.product-list-item{
+	position: relative;
+}
+.product-list-img{
+	height: 315px;
+	background-position: center center;
+	background-size: cover;
+}
+.product-intro{
+	display: flex;
+}
+.product-intro-price{
+	font-weight: 800;
+}
+.product-intro li{
+	width: 50%;
+	border: 1px solid rgb(240, 233, 233);
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+}
+.product-intro-btn{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 20px;
+	font-size: 24px;
+	text-align: center;
+	background: yellow;
+	font-weight: 800;
+	transition: all .5s;
+}
+.product-intro-btn:hover{
+	color: white;
+	background:  black;
+}
+.product-list-li-slogan{
+	position: absolute;
+	left: 10px;
+	writing-mode: vertical-lr;
+	letter-spacing: 5px;
+	background: black;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	font-size: 16px;
+}
+.product-list-li-heart{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	
+}
+.product-list-li-heart i{
+	color: white;
+}
+.product-list-pagination{
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	width: 90%;
+}
+.product-list-pagination a{
+	display: block;
+	padding: 20px;
+	border: 1px solid  rgb(240, 233, 233);
+	text-decoration: none;
+	color: black;
+}
+.product-list-pagination a:hover{
+	color: black;
+	background:  rgb(240, 233, 233);
+}
+/*-----------------------------------------------------*/
+@media(max-width:768px){
+	.product{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.product-list li{
+		width: 100%;
+	}
+	.product-section{
+		width: 55%;
+	}
+	.product .menu{
+		width: 40%;
+	}
+}
+@media(max-width:568px){
+	.product{
+		display: block;
+	}
+	.product .menu{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.product-section{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+}

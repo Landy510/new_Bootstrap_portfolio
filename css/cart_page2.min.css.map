@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,AAAA,CACf,KAAK,CAAC,IAAI,CACV,MAAM,CAAC,IAAI,CACX,MAAM,CAAC,eAAe,CACtB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CAOtB,AAbD,AAOI,mBAPe,CAOf,0BAA0B,AAAA,CACtB,KAAK,CAAC,IAAI,CACV,MAAM,CAAC,IAAI,CACX,MAAM,CAAC,eAAe,CACtB,gBAAgB,CAAE,KAAK,CAC1B",
+    "sources": [
+        "../scss/page/cart_page2.scss"
+    ],
+    "names": [],
+    "file": "cart_page2.min.css"
+}

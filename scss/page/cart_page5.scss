@@ -1,0 +1,25 @@
+.banner_pay_success{
+	//background-image: url('img/paysuccess.jpg');
+	background-position: top center; 
+	background-size: cover;
+	height: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_page5_rounded_circle{
+	width: 30px;
+	height: 30px; 
+	border:1px solid black; 
+	border-radius: 50%;
+}
+.cart_page5_bar{
+	border-bottom: 1px solid black;
+}
+.mark_font_size{
+	font-size: 20px;
+	color: #ffffff;
+}
+.pay_success_section{
+	width: 250px;
+}

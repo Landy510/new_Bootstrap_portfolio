@@ -1,0 +1,301 @@
+<!--這一份html檔案，是整體layout的公版，保存了header和footer的部分版型-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berserker Fittness</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name='description' content='雕塑你我的美妙身材' />
+
+    <link href="img/favicon.png" rel="apple-touch-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/bannerbackground.jpg" />
+    
+    <link rel="stylesheet" href="css/css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="javascript/jquery-3.5.1.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-yl">
+                <button class="navbar-toggler rwd-hamburger-btn" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"  aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/protectionshield.svg" width="50" height="50" class="d-inline-block" alt="">
+                    <span class="d-none d-md-inline-block">Berserker Fittness</span> 
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarText">
+                   
+                  
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                      <a class="nav-link" href="lecture_page.html">課程</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                      <a class="nav-link" href="register_page.html">登入</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary cart_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                <span class="badge bg-danger">2</span>
+                                <i class="fas fa-shopping-cart text-dark"></i>
+                            </button>
+                            <div class="dropdown-menu product_list_dropdown p-0" aria-labelledby="dropdownMenuButton">
+                                <div class="card rounded-0">
+                                    <h5 class="card-header">已選購商品</h5>
+                                    <div class="card-body p-0">
+                                        <table class="table productlist_table m-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="border-top-0" scope="row">
+                                                        <a data-toggle="modal" data-target="#removeModal" data-whatever="手部訓練" href="#"  class="text-light">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </th>
+                                                    <td class="border-top-0 w-50">
+                                                        <img src="img/arm-train.jpg" class="bg-cover productlist_table_img" alt="">
+                                                        <p class="m-0">手部訓練</p>
+                                                    </td>
+                                                    <td class="border-top-0" >x2</td>
+                                                    <td class="border-top-0 w-25">NT$900</td>
+                                                </tr>
+                                              <tr>
+                                                <th class="border-top-0" scope="row">
+                                                   <a href="#" data-toggle="modal" data-target="#removeModal" data-whatever="背部訓練" class="text-light">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                   </a>
+                                                    
+                                                </th>
+                                                <td class="border-top-0">
+                                                    <img src="img/back-train.jpg" class="bg-cover productlist_table_img" alt="">
+                                                    <p class="m-0">背部訓練</p>
+                                                </td>
+                                                <td class="border-top-0">x3</td>
+                                                <td class="border-top-0">NT$1350</td>
+                                              </tr>
+                                              
+                                              
+                                            </tbody>
+                                            
+                                        </table>
+                                    </div>
+                                    <div class="cart-footer">
+                                        <a href="cart_page1.html" class="btn btn-yl btn-lg w-100 rounded-0 font-weight-bold">結帳去</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </li>
+                  </ul>
+                  
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary cart_btn rwd-cart-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                        <span class="badge bg-danger">2</span>
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                    </button>
+                    <div class="dropdown-menu product_list_dropdown p-0" aria-labelledby="dropdownMenuButton">
+                        <div class="card">
+                            <h5 class="card-header">已選購商品</h5>
+                            <div class="card-body p-0">
+                                <table class="table productlist_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="border-top-0" scope="row">
+                                                <a href="#" data-toggle="modal" data-target="#removeModal" data-whatever="手部訓練" class="text-light">
+                                                    <span class="badge bg-danger">2</span>
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                            </th>
+                                            <td class="border-top-0 w-50">
+                                                <img src="img/arm-train.jpg" class="bg-cover productlist_table_img" alt="">
+                                                <p class="m-0">手部訓練</p>
+                                            </td>
+                                            <td class="border-top-0" >x2</td>
+                                            <td class="border-top-0 w-25">NT$900</td>
+                                        </tr>
+                                      <tr>
+                                        <th class="border-top-0" scope="row">
+                                            <a href="#" data-toggle="modal" data-target="#removeModal" data-whatever="背部訓練" class="text-light">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                            
+                                        </th>
+                                        <td class="border-top-0">
+                                            <img src="img/back-train.jpg" class="bg-cover productlist_table_img" alt="">
+                                            <p class="m-0">背部訓練</p>
+                                        </td>
+                                        <td class="border-top-0">x3</td>
+                                        <td class="border-top-0">NT$1350</td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="cart-footer">
+                                <a href="cart_page1.html" class="btn btn-yl btn-lg w-100 rounded-0 font-weight-bold">結帳去</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>
+            
+            <div class="banner" data-aos="fade-right">
+                <h2 class="banner-solgan">
+                    想長肉--
+                    <br>
+                    <span>就是現在</span>
+                </h2>
+            </div>
+        </div>
+        <ul class="hide-nav list-unstyled collapse" id="navbarToggleExternalContent">
+            <li class="p-2">
+                <a href="index.html">首頁</a>
+            </li>
+            <li class="p-2">
+                <a href="lecture_page.html" >課程</a>
+            </li>
+            <li class="p-2">
+                <a href="register_page.html">登入</a>
+            </li>
+        </ul>
+        
+    </div>    
+    <!--客製化頁面開始-->
+    
+   
+    
+    
+      
+
+  
+    <!--客製化頁面結束-->
+    <footer>
+        <div class="container-fluid py-4 bg-yl">
+            <div class="container px-sm-5">
+                <div class="row">
+                    <div class="col-12 mb-4 mb-md-0 col-md-6 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <img src="img/protectionshield.svg" alt="logo圖片" class="footer-search-logo-img">
+                        <span class="footer-search-logo-subscribe" >雕塑你我的美好身材</span>
+                    </div>
+                    <div class="col-12 col-md-6 footer-search-frame">                       
+                            <div class="input-section">
+                                <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="input-content-section">
+                                    <input class="input-content" type="text">
+                                </div>    
+                            </div>
+                            <button class="input-button"><i class="fas fa-arrow-right"></i></button>
+ 
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="container-fluid py-4" style="background: #f0e9e9;">
+            <div class="container px-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="footer-slogon-name">Berserker Fittness</h2>
+                        <ul class="footer-company-contact none_liststyle p-0">
+                            <li>07-1234-5678</li>           
+                            
+                            <li>
+                                <a href="mailto:randychen510@gmail.com" class="mail-option">randychen510@gmail.com</a>
+                            </li>
+                            <li>800 高雄市新興區幸福路 520 號</li>
+                            <li class="fanspage-link">
+                                <a href="#" class="line-option" title="line粉絲團">
+                                    <i class="fab fa-line"></i>
+                                </a>
+                                <a href="#" class="facebook-option" title="facebook粉絲團">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-none d-md-flex flex-column align-items-end"> 
+                        <h3 class="footer-copyright-slogon m-0">今天是個-- <br> <span class="mt-2">舉鐵的好日子</span> </h3>
+                        <p class="paragraph">© 2020 Sweetaste* All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Modal-->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light text-dark" data-dismiss="modal">否</button>
+            <button type="button" class="btn btn-danger px-5">確定刪除</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+<!--AOS的外掛檔案-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+</script>
+<script>
+    $('#removeModal').on('show.bs.modal', function(event){
+        let button = $(event.relatedTarget);
+        let content = button.data('whatever');
+        let modal = $(this);
+        modal.find('.modal-title').text(`確定刪除 ${content} 課程嗎?`);
+
+    })
+</script>
+</body>
+</html>
